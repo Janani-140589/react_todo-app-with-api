@@ -26,8 +26,7 @@ export const TodoList: React.FC<Prop> = ({
   const editFormRef = useRef<HTMLInputElement | null>(null);
 
   const handleKeyboardEvent = (event: KeyboardEvent) => {
-    event.preventDefault();
-    if (event.key === 'Escape') {
+      if (event.key === 'Escape') {
       setEditTodoId(0);
     } else if (event.key === 'Enter') {
     }
@@ -121,7 +120,7 @@ export const TodoList: React.FC<Prop> = ({
             setActionError('update');
             setLoadingId(0);
           })
-          .finally();
+          
       }
     }
 

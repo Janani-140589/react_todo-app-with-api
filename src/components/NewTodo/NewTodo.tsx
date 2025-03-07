@@ -95,7 +95,7 @@ export const NewTodo: React.FC<Prop> = ({
         .catch(() => {
           setActionError('update');
         })
-        .finally();
+                
       setTimeout(() => {
         setActionError('');
       }, 3000);

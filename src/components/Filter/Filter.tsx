@@ -32,7 +32,7 @@ export const Filter: React.FC<Prop> = ({
           .catch(() => {
             setActionError('delete');
           })
-          .finally();
+          
       });
     }
   };
